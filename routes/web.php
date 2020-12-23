@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('topics', 'TopicController');
+
+/* Route::resource('topics', function () {
+    return view('topic.create');
+}); */
